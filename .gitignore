@@ -1,0 +1,34 @@
+.DS_Store
+node_modules
+/dist
+/coverage-vitest
+/coverage-cypress
+/.nyc_output
+/tests/e2e/videos/
+/tests/e2e/screenshots/
+/tests/e2e/downloads/
+
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+/coverage
+/test-results/
+/playwright-report/
+/tests/playwright/.cache/

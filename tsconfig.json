@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "outDir": "./dist",
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "removeComments": true,
+    "typeRoots": ["node_modules/@types", "src/@types", "node_modules"],
+    "types": ["vite/client", "cypress", "element-plus/global", "@intlify/unplugin-vue-i18n/messages"],
+    "paths": {
+      "@/*": ["src/*", "src/*.vue", "src/*/index.vue", "src/*/index.js", "src/*/index.ts"],
+      "@route-types": ["src/router/route-types.ts"],
+      "@routes": ["src/router/routes.ts"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx", "components.d.ts", "auto-imports.d.ts"],
+  "exclude": ["node_modules", "dist", "tests/**/*", "src/**/*.unit.ts", "src/**/*.spec.ts", "src/**/*.test.ts"]
+}
